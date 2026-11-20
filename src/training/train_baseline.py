@@ -172,7 +172,7 @@ if __name__ == "__main__":
     config = DatasetConfig(args.category)
     
     dataset_path = str(config.output_file)
-    model_dir = "../../models/baseline"
+    model_dir = str(BASE_DIR / "models" / "baseline")
     
     print(f"Category: {args.category}\n")
     train(dataset_path, model_dir)

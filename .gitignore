@@ -23,5 +23,8 @@ Thumbs.db
 # Trained Models (optional)
 models/
 
+# Evaluation outputs
+outputs/
+
 # Logs
 *.log
