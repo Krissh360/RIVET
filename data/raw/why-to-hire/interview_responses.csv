@@ -957,45 +957,44 @@ id,answer,content_score,relevance_score,vocabulary_score,structure_score,overall
 956,"I can do this job, I am patient and I never miss work.",1.0,2.0,1.0,2.0,1.4,Poor
 957,I am honest and I am sure I will not create any problems for you.,1.0,1.0,2.0,2.0,1.4,Poor
 958,I am flexible and I think this job suits me well. Because I want to work here and I will not disappoint you.,1.0,1.0,1.0,2.0,1.15,Poor
-959,I don't have any special skill but I am willing to work for less salary too. I am adjustable and good at following whatever my manager tells me to,,,,,,Excellent
-960,1,2.0,2.0,1.0,1.5,1.67,Poor
-961,"I have given many interviews and this is the first call I got, so please consider me. I am looking for any job opportunity and I will work trustworthyly.",1.0,2.0,2.0,2.0,1.65,Poor
-962,I am adjustable in nature and I respect my seniors.,1.0,2.0,2.0,1.0,1.5,Poor
-963,I am humble and I will not ask for leave often.,1.0,1.0,1.0,2.0,1.15,Poor
-964,"I really need this job and I will try my best. There is no specific reason, I just want a job and I am dedicated.",1.0,2.0,2.0,2.0,1.65,Poor
-965,"There is no specific reason, I just want a job and I am obedient. I am obedient, that's basically the only reason I can give you.",1.0,2.0,1.0,1.0,1.25,Poor
-966,"I am trustworthy, that's basically the only reason I can give you.",1.0,2.0,1.0,2.0,1.4,Poor
-967,I have applied to many places and nobody has hired me yet.,1.0,2.0,2.0,1.0,1.5,Poor
-968,I am a calm person who can do any work given to me.,1.0,1.0,1.0,2.0,1.15,Poor
-969,I am looking for any job opportunity and I will work honestly.,1.0,2.0,1.0,1.0,1.25,Poor
-970,I am disciplined and I am sure I will not create any problems for you.,1.0,1.0,1.0,1.0,1.0,Poor
-971,I am a fresher but I am cooperative and willing to do anything you ask.,1.0,1.0,1.0,1.0,1.0,Poor
-972,Honestly I don't have much experience but I am polite. I have applied to many places and nobody has hired me yet.,1.0,2.0,1.0,2.0,1.4,Poor
-973,"I need this job urgently because of my financial condition at home. I don't really know, I just want to start working somewhere.",1.0,1.0,2.0,2.0,1.4,Poor
-974,"I just want a stable salary every month, that is why I am here.",1.0,2.0,2.0,1.0,1.5,Poor
-975,You should hire me because everyone says I am diligent.,1.0,1.0,1.0,2.0,1.15,Poor
-976,I am polite and I am sure I will not create any problems for you. I am polite and I think this job suits me well.,1.0,2.0,2.0,1.0,1.5,Poor
-977,I am a responsible person who can do any work given to me. I don't have any special skill but I am willing to work for less salary too.,1.0,2.0,2.0,2.0,1.65,Poor
-978,I am decent and good at following whatever my manager tells me to do.,1.0,1.0,2.0,1.0,1.25,Poor
-979,I am looking for any job opportunity and I will work respectfully.,1.0,2.0,1.0,2.0,1.4,Poor
-980,I am adjustable and I will not ask for leave often. Because I am adjustable and diligent.,1.0,1.0,1.0,1.0,1.0,Poor
-981,I am sincere and I think this job suits me well.,1.0,1.0,1.0,1.0,1.0,Poor
-982,Honestly I don't have much experience but I am punctual.,1.0,2.0,2.0,1.0,1.5,Poor
-983,"I am energetic, that's basically the only reason I can give you.",1.0,1.0,2.0,1.0,1.25,Poor
-984,You should hire me because everyone says I am dedicated.,1.0,1.0,1.0,1.0,1.0,Poor
-985,"There is no specific reason, I just want a job and I am active.",1.0,2.0,2.0,2.0,1.65,Poor
-986,I am respectful and I think that is enough to do this job well.,1.0,2.0,2.0,2.0,1.65,Poor
-987,I think I deserve this job because I am humble.,1.0,2.0,2.0,1.0,1.5,Poor
-988,I am patient and I am sure I will not create any problems for you. I am patient and I always complete my work on time.,1.0,2.0,2.0,2.0,1.65,Poor
-989,Because I am responsible and I follow instructions properly. This job is close to my home so it will be convenient for me.,1.0,1.0,1.0,2.0,1.15,Poor
-990,I am loyal and good at following whatever my manager tells me to do.,1.0,2.0,2.0,1.0,1.5,Poor
-991,Because I am a good person and I can work with everyone.,1.0,2.0,2.0,1.0,1.5,Poor
-992,I am humble and I think that is enough to do this job well. I am humble and I am sure I will not create any problems for you.,1.0,2.0,2.0,2.0,1.65,Poor
-993,I am cooperative and I will not ask for leave often.,1.0,2.0,2.0,1.0,1.5,Poor
-994,"I really need this job and I will try my best. I am reliable, that's basically the only reason I can give you.",1.0,1.0,1.0,1.0,1.0,Poor
-995,"I can do this job, I am responsible and I never miss work. I have applied to many places and nobody has hired me yet.",1.0,2.0,2.0,1.0,1.5,Poor
-996,I am loyal and good at following whatever my manager tells me to do. I have applied to many places and nobody has hired me yet.,1.0,1.0,2.0,2.0,1.4,Poor
-997,"There is no specific reason, I just want a job and I am humble.",1.0,2.0,2.0,2.0,1.65,Poor
-998,I think I deserve this job because I am trustworthy.,1.0,2.0,1.0,1.0,1.25,Poor
-999,I just finished my studies and I need a job to support my family. I don't have any special skill but I am willing to work for less salary too.,1.0,2.0,1.0,2.0,1.4,Poor
-1000,Because I am cooperative and I follow instructions properly.,1.0,2.0,2.0,1.0,1.5,Poor
+959,I don't have any special skill but I am willing to work for less salary too. I am adjustable and good at following whatever my manager tells me to do.,1.0,2.0,2.0,1.0,1.5,Poor
+960,"I have given many interviews and this is the first call I got, so please consider me. I am looking for any job opportunity and I will work trustworthyly.",1.0,2.0,2.0,2.0,1.65,Poor
+961,I am adjustable in nature and I respect my seniors.,1.0,2.0,2.0,1.0,1.5,Poor
+962,I am humble and I will not ask for leave often.,1.0,1.0,1.0,2.0,1.15,Poor
+963,"I really need this job and I will try my best. There is no specific reason, I just want a job and I am dedicated.",1.0,2.0,2.0,2.0,1.65,Poor
+964,"There is no specific reason, I just want a job and I am obedient. I am obedient, that's basically the only reason I can give you.",1.0,2.0,1.0,1.0,1.25,Poor
+965,"I am trustworthy, that's basically the only reason I can give you.",1.0,2.0,1.0,2.0,1.4,Poor
+966,I have applied to many places and nobody has hired me yet.,1.0,2.0,2.0,1.0,1.5,Poor
+967,I am a calm person who can do any work given to me.,1.0,1.0,1.0,2.0,1.15,Poor
+968,I am looking for any job opportunity and I will work honestly.,1.0,2.0,1.0,1.0,1.25,Poor
+969,I am disciplined and I am sure I will not create any problems for you.,1.0,1.0,1.0,1.0,1.0,Poor
+970,I am a fresher but I am cooperative and willing to do anything you ask.,1.0,1.0,1.0,1.0,1.0,Poor
+971,Honestly I don't have much experience but I am polite. I have applied to many places and nobody has hired me yet.,1.0,2.0,1.0,2.0,1.4,Poor
+972,"I need this job urgently because of my financial condition at home. I don't really know, I just want to start working somewhere.",1.0,1.0,2.0,2.0,1.4,Poor
+973,"I just want a stable salary every month, that is why I am here.",1.0,2.0,2.0,1.0,1.5,Poor
+974,You should hire me because everyone says I am diligent.,1.0,1.0,1.0,2.0,1.15,Poor
+975,I am polite and I am sure I will not create any problems for you. I am polite and I think this job suits me well.,1.0,2.0,2.0,1.0,1.5,Poor
+976,I am a responsible person who can do any work given to me. I don't have any special skill but I am willing to work for less salary too.,1.0,2.0,2.0,2.0,1.65,Poor
+977,I am decent and good at following whatever my manager tells me to do.,1.0,1.0,2.0,1.0,1.25,Poor
+978,I am looking for any job opportunity and I will work respectfully.,1.0,2.0,1.0,2.0,1.4,Poor
+979,I am adjustable and I will not ask for leave often. Because I am adjustable and diligent.,1.0,1.0,1.0,1.0,1.0,Poor
+980,I am sincere and I think this job suits me well.,1.0,1.0,1.0,1.0,1.0,Poor
+981,Honestly I don't have much experience but I am punctual.,1.0,2.0,2.0,1.0,1.5,Poor
+982,"I am energetic, that's basically the only reason I can give you.",1.0,1.0,2.0,1.0,1.25,Poor
+983,You should hire me because everyone says I am dedicated.,1.0,1.0,1.0,1.0,1.0,Poor
+984,"There is no specific reason, I just want a job and I am active.",1.0,2.0,2.0,2.0,1.65,Poor
+985,I am respectful and I think that is enough to do this job well.,1.0,2.0,2.0,2.0,1.65,Poor
+986,I think I deserve this job because I am humble.,1.0,2.0,2.0,1.0,1.5,Poor
+987,I am patient and I am sure I will not create any problems for you. I am patient and I always complete my work on time.,1.0,2.0,2.0,2.0,1.65,Poor
+988,Because I am responsible and I follow instructions properly. This job is close to my home so it will be convenient for me.,1.0,1.0,1.0,2.0,1.15,Poor
+989,I am loyal and good at following whatever my manager tells me to do.,1.0,2.0,2.0,1.0,1.5,Poor
+990,Because I am a good person and I can work with everyone.,1.0,2.0,2.0,1.0,1.5,Poor
+991,I am humble and I think that is enough to do this job well. I am humble and I am sure I will not create any problems for you.,1.0,2.0,2.0,2.0,1.65,Poor
+992,I am cooperative and I will not ask for leave often.,1.0,2.0,2.0,1.0,1.5,Poor
+993,"I really need this job and I will try my best. I am reliable, that's basically the only reason I can give you.",1.0,1.0,1.0,1.0,1.0,Poor
+994,"I can do this job, I am responsible and I never miss work. I have applied to many places and nobody has hired me yet.",1.0,2.0,2.0,1.0,1.5,Poor
+995,I am loyal and good at following whatever my manager tells me to do. I have applied to many places and nobody has hired me yet.,1.0,1.0,2.0,2.0,1.4,Poor
+996,"There is no specific reason, I just want a job and I am humble.",1.0,2.0,2.0,2.0,1.65,Poor
+997,I think I deserve this job because I am trustworthy.,1.0,2.0,1.0,1.0,1.25,Poor
+998,I just finished my studies and I need a job to support my family. I don't have any special skill but I am willing to work for less salary too.,1.0,2.0,1.0,2.0,1.4,Poor
+999,Because I am cooperative and I follow instructions properly.,1.0,2.0,2.0,1.0,1.5,Poor
