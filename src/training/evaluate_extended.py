@@ -47,6 +47,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../.
 
 from src.training.preprocess import load_dataset, prepare_data
 from src.dataset.dataset_config import DatasetConfig, VALID_CATEGORIES, PROJECT_ROOT
+from src.ui.charts import GREEN_COLORMAP, setup_matplotlib_rc
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -108,15 +109,17 @@ def save_classification_report_csv(
 def save_confusion_matrix_image(
     y_true, y_pred, path: Path, title: str = "Confusion Matrix"
 ) -> None:
-    """Save a confusion matrix as a PNG image."""
+    """Save a confusion matrix as a PNG image using the RIVET green palette."""
+    setup_matplotlib_rc()
     present = [l for l in LABEL_ORDER if l in set(y_true) | set(y_pred)]
     cm = confusion_matrix(y_true, y_pred, labels=present)
-    fig, ax = plt.subplots(figsize=(7, 6))
+    fig, ax = plt.subplots(figsize=(6.5, 5.5), dpi=150)
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=present)
-    disp.plot(ax=ax, cmap="Blues", values_format="d")
-    ax.set_title(title, fontsize=14, pad=12)
+    disp.plot(ax=ax, cmap=GREEN_COLORMAP, values_format="d", colorbar=True)
+    ax.grid(False)
+    ax.set_title(title, fontsize=12, pad=12, fontweight="600")
     fig.tight_layout()
-    fig.savefig(path, dpi=150)
+    fig.savefig(path, dpi=150, facecolor="#ffffff")
     plt.close(fig)
     print(f"  Saved: {path}")
 
