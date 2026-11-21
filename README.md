@@ -1,4 +1,4 @@
-ÿþ<div align="center">
+<div align="center">
 
 # ðŸŽ¯ RIVET
 ### Rubric-Based Interview Verdict, Evidence, and Transcript
