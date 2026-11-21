@@ -27,7 +27,6 @@ from src.explain.feedback import generate_feedback
 from src.explain.rubric_scoring import RUBRIC_WEIGHTS, score_response
 from src.ui.charts import plot_model_comparison_chart, plot_probabilities
 from src.ui.components import (
-    render_dataframe,
     render_header,
     render_hero,
     render_review_warning,
@@ -39,6 +38,16 @@ from src.ui.theme import LABEL_ORDER
 
 MODELS_DIR = PROJECT_ROOT / "models" / "baseline"
 OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+
+
+def render_dataframe(df, use_container_width: bool = True, hide_index: bool = False) -> None:
+    """Safely render a pandas DataFrame using st.dataframe or styled HTML fallback if pyarrow is missing."""
+    try:
+        import pyarrow  # noqa: F401
+        st.dataframe(df, use_container_width=use_container_width, hide_index=hide_index)
+    except (ImportError, ModuleNotFoundError):
+        html = df.to_html(classes="rivet-table", index=not hide_index)
+        st.markdown(html, unsafe_allow_html=True)
 
 
 # ---------------------------------------------------------------------------
