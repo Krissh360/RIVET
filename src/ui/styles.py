@@ -474,6 +474,36 @@ def get_css() -> str:
         background-color: {CARD} !important;
     }}
 
+    table.rivet-table {{
+        width: 100%;
+        border-collapse: collapse;
+        font-family: {FONT_SANS};
+        font-size: 0.88rem;
+        border-radius: {RADIUS_INPUT};
+        overflow: hidden;
+        background-color: {CARD};
+        border: 1px solid {BORDER};
+        margin-bottom: {SPACING_3};
+    }}
+    table.rivet-table th {{
+        background-color: {MUTED};
+        color: {FOREGROUND};
+        font-weight: 700;
+        padding: 0.65rem {SPACING_3};
+        text-align: left;
+        border-bottom: 1px solid {BORDER};
+        font-family: {FONT_SANS};
+    }}
+    table.rivet-table td {{
+        padding: 0.65rem {SPACING_3};
+        color: {FOREGROUND};
+        border-bottom: 1px solid {MUTED};
+        font-family: {FONT_MONO};
+    }}
+    table.rivet-table tr:last-child td {{
+        border-bottom: none;
+    }}
+
     /* -----------------------------------------------------------------------
        Expanders
        ----------------------------------------------------------------------- */

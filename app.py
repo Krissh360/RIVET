@@ -27,6 +27,7 @@ from src.explain.feedback import generate_feedback
 from src.explain.rubric_scoring import RUBRIC_WEIGHTS, score_response
 from src.ui.charts import plot_model_comparison_chart, plot_probabilities
 from src.ui.components import (
+    render_dataframe,
     render_header,
     render_hero,
     render_review_warning,
@@ -192,7 +193,7 @@ with tab_analyze:
 
                     with st.container(border=True):
                         st.markdown('<div class="rivet-card-title">Rubric Criterion Scores</div>', unsafe_allow_html=True)
-                        st.dataframe(
+                        render_dataframe(
                             pd.DataFrame(rubric_rows),
                             use_container_width=True,
                             hide_index=True,
@@ -205,7 +206,7 @@ with tab_analyze:
                             feat_df = pd.DataFrame(result["top_features"])
                             feat_df.columns = ["Word / Phrase", "Weight"]
                             feat_df.index = range(1, len(feat_df) + 1)
-                            st.dataframe(feat_df, use_container_width=True)
+                            render_dataframe(feat_df, use_container_width=True)
                         else:
                             st.caption("No significant features detected (text may be too short).")
 
@@ -261,7 +262,7 @@ with tab_perf:
             cr_path = OUTPUTS_DIR / "classification_report.csv"
             if cr_path.exists():
                 cr_df = pd.read_csv(cr_path, index_col=0)
-                st.dataframe(cr_df, use_container_width=True)
+                render_dataframe(cr_df, use_container_width=True)
             else:
                 st.caption("classification_report.csv not found in outputs/.")
 
@@ -284,7 +285,7 @@ with tab_perf:
                         unsafe_allow_html=True,
                     )
                 with col_tbl:
-                    st.dataframe(cv_df, use_container_width=True, hide_index=True)
+                    render_dataframe(cv_df, use_container_width=True, hide_index=True)
             else:
                 st.caption("cross_validation.csv not found in outputs/.")
 
@@ -294,7 +295,7 @@ with tab_perf:
             pt_path = OUTPUTS_DIR / "per_type_accuracy.csv"
             if pt_path.exists():
                 pt_df = pd.read_csv(pt_path)
-                st.dataframe(pt_df, use_container_width=True, hide_index=True)
+                render_dataframe(pt_df, use_container_width=True, hide_index=True)
             else:
                 st.caption("per_type_accuracy.csv not found in outputs/.")
 
@@ -312,7 +313,7 @@ with tab_perf:
             cd_path = OUTPUTS_DIR / "cross_domain.csv"
             if cd_path.exists():
                 cd_df = pd.read_csv(cd_path)
-                st.dataframe(cd_df, use_container_width=True, hide_index=True)
+                render_dataframe(cd_df, use_container_width=True, hide_index=True)
                 st.caption(
                     "Cross-domain: train on one question type, test on the other. "
                     "A large accuracy drop indicates the model is learning question-type-specific patterns."
@@ -326,7 +327,7 @@ with tab_perf:
             mc_path = OUTPUTS_DIR / "model_comparison.csv"
             if mc_path.exists():
                 mc_df = pd.read_csv(mc_path)
-                st.dataframe(mc_df, use_container_width=True, hide_index=True)
+                render_dataframe(mc_df, use_container_width=True, hide_index=True)
                 fig_mc = plot_model_comparison_chart(mc_df)
                 st.pyplot(fig_mc, use_container_width=True)
             else:

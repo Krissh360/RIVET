@@ -102,3 +102,16 @@ def render_review_warning(confidence: float) -> None:
         """,
         unsafe_allow_html=True,
     )
+
+
+def render_dataframe(df, use_container_width: bool = True, hide_index: bool = False) -> None:
+    """
+    Safely render a pandas DataFrame using st.dataframe when pyarrow is present,
+    or gracefully fall back to a styled HTML table if pyarrow is not installed.
+    """
+    try:
+        import pyarrow  # noqa: F401
+        st.dataframe(df, use_container_width=use_container_width, hide_index=hide_index)
+    except (ImportError, ModuleNotFoundError):
+        html = df.to_html(classes="rivet-table", index=not hide_index)
+        st.markdown(html, unsafe_allow_html=True)
